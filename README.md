@@ -1,5 +1,7 @@
 # Rust/WASM Game of Life
 
+This repo is a result of following the rust-wasm tutorial [here](https://rustwasm.github.io/book/game-of-life/introduction.html), then converting it to TypeScript and reorganizing the project into a structure that makes better sense for my preferences, so that I have a stable jumping off point for future projects serving WASM compiled from Rust.
+
 ## install dependencies
 ```yarn```
 
