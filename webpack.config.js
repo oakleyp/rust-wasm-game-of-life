@@ -4,7 +4,7 @@ const WasmPackPlugin = require("@wasm-tool/wasm-pack-plugin");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
 
 module.exports = {
-  entry: "./js/index.ts",
+  entry: "./js_src/index.ts",
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "bootstrap.js",

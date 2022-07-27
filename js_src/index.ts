@@ -8,7 +8,6 @@ const ALIVE_COLOR = "#000000";
 export class GameOfLife {
   universe!: Universe;
   memory!: WebAssembly.Memory;
-  // animationId = null as any;
 
   canvas!: HTMLCanvasElement;
   ctx!: CanvasRenderingContext2D;

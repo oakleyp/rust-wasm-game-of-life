@@ -6,4 +6,4 @@ yarn.lock
 pkg
 target
 node_modules
-core
+rust_src

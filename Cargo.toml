@@ -1,19 +1,18 @@
-# You must change these to your own details.
 [package]
-authors = ["Ian Huang <ian1314159@gmail.com>"]
-categories = ["wasm"]
-description = "My awesome Rust, WebAssembly, and TypeScript library template!"
+authors = ["Oakley Peavler <oakleypeavler@gmail.com>"]
+categories = ["wasm", "game of life"]
+description = "Game of Life"
 edition = "2018"
 license = "MIT"
-name = "rust-typescript-template"
+name = "rust-wasm-game-of-life"
 readme = "README.md"
-repository = "https://github.com/iantheearl/rust-typescript-template"
+repository = "https://github.com/oakleyp/rust-wasm-game-of-life"
 version = "0.1.0"
 
 [lib]
 crate-type = ["cdylib"]
-name = "core"
-path = "core/lib.rs"
+name = "rust_src"
+path = "rust_src/lib.rs"
 
 [profile.release]
 # This makes the compiled code faster and smaller, but it makes compiling slower,
