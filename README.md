@@ -8,7 +8,7 @@ This repo is a result of following the rust-wasm tutorial [here](https://rustwas
 ## start development
 ```yarn run dev```
 
-## run tests (not working yet)
+## run tests
 ```wasm-pack test --headless [--firefox | --chrome | --safari]```
 
 ## visit http://localhost:8080

@@ -7,3 +7,4 @@ bin/
 pkg/
 wasm-pack.log
 .vscode/
+yarn-error.log

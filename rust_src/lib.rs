@@ -1,7 +1,11 @@
+extern crate js_sys;
+extern crate web_sys;
+
 mod utils;
 
 use wasm_bindgen::prelude::*;
 use std::fmt;
+
 
 // When the `wee_alloc` feature is enabled, use `wee_alloc` as the global
 // allocator.
@@ -70,8 +74,8 @@ impl Universe {
         let height = 64;
 
         let cells = (0..width * height)
-            .map(|i| {
-                if i % 2 == 0 || i % 7 == 0 {
+            .map(|_| {
+                if js_sys::Math::round(js_sys::Math::random()) == 0.0 {
                     Cell::Alive
                 } else {
                     Cell::Dead
@@ -157,3 +161,9 @@ impl Universe {
     }
 }
 
+// A macro to provide `println!(..)`-style syntax for `console.log` logging.
+macro_rules! log {
+    ( $( $t:tt )* ) => {
+        web_sys::console::log_1(&format!( $( $t )* ).into());
+    }
+}
